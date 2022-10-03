@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Poppins;
+      }
+      .back {
+        background: black;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      .nav-style {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .title {
+        font-size: 2.5rem;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      main {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .titlek {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 5em;
+        -webkit-text-stroke: 1px white;
+        color: transparent;
+        background-image: linear-gradient(white, white);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -400px 0;
+        animation: animate 2s ease-in-out infinite alternate;
+      }
+      .info {
+        display: flex;
+        font-weight: bold;
+        background-color: grey;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      @keyframes animate {
+        100% {
+          background-position: 0 0;
+        }
+      }
+      .nav-links ul {
+        margin: 0px;
+        padding: 0px;
+
+        display: flex;
+      }
+      .nav-links li {
+        list-style: none;
+      }
+      .nav-links li a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+        display: block;
+        font-weight: bold;
+      }
+      .life {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        color: white;
+      }
+      .nav-links li :hover {
+        color: black;
+        transition: 0.5s;
+        background-color: white;
+      }
+      .tooglebutt {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background: transparent;
+      }
+      .tooglebutt .butt {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      @media (max-width: 600px) {
+        .tooglebutt {
+          display: flex;
+        }
+        .nav-links {
+          width: 100%;
+          display: none;
+        }
+        .nav-style {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .nav-links ul {
+          width: 100%;
+          flex-direction: column;
+        }
+        .nav-links li {
+          text-align: center;
+        }
+        .nav-links.active {
+          display: flex;
+        }
+        .titlek {
+          font-size: 2.5em;
+        }
+        .title {
+          display: flex;
+        }
+        main {
+          position: relative;
+          transform: translate(-50%, -50%);
+          top: 20%;
+          left: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back">
+      <nav class="nav-style">
+        <div class="title">Ka-win</div>
+        <a href="#" class="tooglebutt">
+          <span class="butt"></span>
+          <span class="butt"></span>
+          <span class="butt"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a href="/total/index1.html"> ka-win store</a>
+            </li>
+            <li><a href="https://t.me/amazonoffers7777">Telegram</a></li>
+            <li><a href="https://amzn.to/3SPcn0u">Amazon</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <h2 class="titlek">Ka-win</h2>
+        <div class="info">
+          <marquee>
+            Hey! this is Kawin . This is my affiliate page . Click on the menu
+            go to ka-win store which was in the right side top for cool amazon
+            products and offers. For more products join Telegram .
+          </marquee>
+        </div>
+      </main>
+      <div class="life">life jingalala 😉!</div>
+    </div>
+
+    <script src="/total/script.js"></script>
+  </body>
+</html>
